@@ -1,0 +1,6 @@
+pandas
+fastapi
+uvicorn
+pandasql
+SQLAlchemy==1.4.46
+
