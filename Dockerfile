@@ -1,7 +1,7 @@
 FROM python:3.9
-COPY . usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir /code
+WORKDIR /code
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-ENTRYPOINT uvicorn --host 0.0.0.0 main:app --reload
-EXPOSE 8000
-CMD ["uvicorn", "main:data_src_app", "--host", "0.0.0.0"]
+COPY . .
+CMD ["uvicorn", "main:app", "--host=0.0.0.0", "--port=80"]
