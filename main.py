@@ -12,7 +12,7 @@ app= FastAPI()
 def index():
     """funcion que retorno la informacion en la pagina de inicio"""
 
-    return "Bienvenido a la aplicación para realizar consultas sobre los servicios de streaming"
+    return "Bienvenido a la aplicación para realizar consultas sobre los servicios de streaming \n ir a 'url-actual'/docs para la interfaz intereactiva"
 
 
 
