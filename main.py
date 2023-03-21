@@ -10,9 +10,9 @@ app= FastAPI()
 
 @app.get("/")
 def index():
-    """funcion que retorno la informacion en la pagina de inicio"""
+    """funcion que retorna la informacion en la pagina de inicio"""
 
-    return "Bienvenido a la aplicación para realizar consultas sobre los servicios de streaming \n ir a 'url-actual'/docs para la interfaz intereactiva"
+    return f"Bienvenido a la aplicación para realizar consultas sobre los servicios de streaming \n ir a 'url-actual'/docs para la interfaz intereactiva"
 
 
 
@@ -21,8 +21,9 @@ def index():
 def get_max_duration(year:Optional[str]=Query("'%'"),
                      platform:Optional[str]=Query("'%'"),
                      duration_type:Optional[str]=Query("'%'")):
-    """la funcion recibi como parametros opcionales año,plataforma o tipo de duracion y retorna
-        la pelicula con mayor duracion"""
+    """la funcion recibe como parametros opcionales año,plataforma o tipo de duracion y retorna
+        la pelicula con mayor duracion
+        ACLARACION:min o season van entre comillas"""
     
     if platform=="netflix":
         platform="'n%'"
