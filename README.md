@@ -3,7 +3,7 @@
 <h2>Franco Myburg-Cohorte n°8</h2>
 <h2>Links<h2>
 <a href="https://francomyburg.up.railway.app/docs">API</a><br>
-<a href="https://huggingface.co/spaces/Francomyburg/appmovie1">app recomendacion de peliculas</a>
+<a href="https://huggingface.co/spaces/Francomyburg/appmovie1">app recomendacion de peliculas</a><br>
 <a href="https://www.youtube.com/watch?v=01OkTX-Y9zA">Video("sin audio")</a>
 <h3>Resumen del Proyecto</h3>
 <p>El proyecto se puede dividir en dos partes, la primera relacionada con el trabajo de un data engineer donde se nos pedía realizar un proceso de ETL(Extract, Transform y Load) de los datos proporcionados y después de este proceso crear una api para realizar consultas a estos datos.<br>
